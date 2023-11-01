@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <title>Admin Panel</title>
 </head>
+
 <body>
     <!-- header -->
     <div class="ml-64 w-auto h-14 flex shadow-md shadow-black/5 mb-2">
@@ -36,7 +38,7 @@
                     <i class="bi bi-person-fill"></i>
                 </button>
             </li>
-        </ul>        
+        </ul>
     </div>
     <!-- end header -->
 
@@ -130,6 +132,243 @@
                     <a href="#" class="text-blue-500 font-medium text-sm hover:text-blue-600">View details</a>
                 </div>
             </div>
+            <!-- CONTENT BY FAHAD -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-white border-gray-100 shadow-md shadow-black/10 p-6">
+                    <div class="flax justify-between mb-4">
+                        <div class="font-medium py-5 px-2">Manage Orders</div>
+                        <div class="flex-items-center mb-4 order-tab">
+                            <button type="button" data-tab="order" data-tab-page="active" class="bg-gray-50 text-sm font medium text-gray-400 py-2 px-4 rounded-tl-md rounded-bl-md hover:text-gray-600 active">Active</button>
+                            <button type="button" data-tab="order" data-tab-page="completed" class="bg-gray-50 text-sm font medium text-gray-400 py-2 px-4 hover:text-gray-600">Completed</button>
+                            <button type="button" data-tab="order" data-tab-page="canceled" class="bg-gray-50 text-sm font medium text-gray-400 py-2 px-4 rounded-tr-md rounded-br-md hover:text-gray-600">Canceled</button>
+                        </div>
+                        <div class="overflow-x-auto">
+                            <table class="min-w-[540px]" data-tab-for="order" data-page="active">
+                                <thead>
+                                    <tr>
+                                        <th class="text-[12-px] uppercase tracking-wide font-medium text-gray-400 py-2 px-4 bg-gray-50 text-left rounded-tl-md rounded-bl-md">Service</th>
+                                        <th class="text-[12-px] uppercase tracking-wide font-medium text-gray-400 py-2 px-4 bg-gray-50 text-left">Estimate</th>
+                                        <th class="text-[12-px] uppercase tracking-wide font-medium text-gray-400 py-2 px-4 bg-gray-50 text-left">Budget</th>
+                                        <th class="text-[12-px] uppercase tracking-wide font-medium text-gray-400 py-2 px-4 bg-gray-50 text-left rounded-tr-md rounded-br-md">Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="py-2 px-4">
+                                            <div class="flex-items-center">
+                                                <i class="bi bi-person-square"></i>
+                                                <a href="#" class="text-gray-600 font font-medium hover:text-blue-500 ml-2">Create landing page</a>
+                                            </div>
+                                        </td>
+                                        <td class="py-2 px-4 border-b border-b-gray-50">
+                                            <span class="text-[13px] font-medium text-gray-400">3 days</span>
+                                        </td>
+                                        <td class="py-2 px-4 border-b border-b-gray-50">
+                                            <span class="text-[13px] font-medium text-gray-400">$56</span>
+                                        </td>
+                                        <td class="py-2 px-4 border-b border-b-gray-50">
+                                            <span class="inline-block p=1 rounded bg-emerald-500/10 text-emerald-500 font-semibold text-[12px] leading-none">In progress</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="py-2 px-4">
+                                            <div class="flex-items-center">
+                                                <i class="bi bi-person-square"></i>
+                                                <a href="#" class="text-gray-600 font font-medium hover:text-blue-500 ml-2">Create landing page</a>
+                                            </div>
+                                        </td>
+                                        <td class="py-2 px-4 border-b border-b-gray-50">
+                                            <span class="text-[13px] font-medium text-gray-400">3 days</span>
+                                        </td>
+                                        <td class="py-2 px-4 border-b border-b-gray-50">
+                                            <span class="text-[13px] font-medium text-gray-400">$56</span>
+                                        </td>
+                                        <td class="py-2 px-4 border-b border-b-gray-50">
+                                            <span class="inline-block p=1 rounded bg-emerald-500/10 text-emerald-500 font-semibold text-[12px] leading-none">In progress</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="py-2 px-4">
+                                            <div class="flex-items-center">
+                                                <i class="bi bi-person-square"></i>
+                                                <a href="#" class="text-gray-600 font font-medium hover:text-blue-500 ml-2">Create landing page</a>
+                                            </div>
+                                        </td>
+                                        <td class="py-2 px-4 border-b border-b-gray-50">
+                                            <span class="text-[13px] font-medium text-gray-400">3 days</span>
+                                        </td>
+                                        <td class="py-2 px-4 border-b border-b-gray-50">
+                                            <span class="text-[13px] font-medium text-gray-400">$56</span>
+                                        </td>
+                                        <td class="py-2 px-4 border-b border-b-gray-50">
+                                            <span class="inline-block p=1 rounded bg-emerald-500/10 text-emerald-500 font-semibold text-[12px] leading-none">In progress</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="py-2 px-4">
+                                            <div class="flex-items-center">
+                                                <i class="bi bi-person-square"></i>
+                                                <a href="#" class="text-gray-600 font font-medium hover:text-blue-500 ml-2">Create landing page</a>
+                                            </div>
+                                        </td>
+                                        <td class="py-2 px-4 border-b border-b-gray-50">
+                                            <span class="text-[13px] font-medium text-gray-400">3 days</span>
+                                        </td>
+                                        <td class="py-2 px-4 border-b border-b-gray-50">
+                                            <span class="text-[13px] font-medium text-gray-400">$56</span>
+                                        </td>
+                                        <td class="py-2 px-4 border-b border-b-gray-50">
+                                            <span class="inline-block p=1 rounded bg-emerald-500/10 text-emerald-500 font-semibold text-[12px] leading-none">In progress</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="py-2 px-4">
+                                            <div class="flex-items-center">
+                                                <i class="bi bi-person-square"></i>
+                                                <a href="#" class="text-gray-600 font font-medium hover:text-blue-500 ml-2">Create landing page</a>
+                                            </div>
+                                        </td>
+                                        <td class="py-2 px-4 border-b border-b-gray-50">
+                                            <span class="text-[13px] font-medium text-gray-400">3 days</span>
+                                        </td>
+                                        <td class="py-2 px-4 border-b border-b-gray-50">
+                                            <span class="text-[13px] font-medium text-gray-400">$56</span>
+                                        </td>
+                                        <td class="py-2 px-4 border-b border-b-gray-50">
+                                            <span class="inline-block p=1 rounded bg-emerald-500/10 text-emerald-500 font-semibold text-[12px] leading-none">In progress</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white border-gray-100 shadow-md shadow-black/10 p-6">
+                    <div class="flax justify-between mb-4">
+                        <div class="font-medium py-5 px-2 mr-2">Manage Services</div>
+                        <form action="" class="flex items-center mb-4">
+                            <div class="relative w-full">
+                                <input type="text" class="py-2 pr-4 pl-10 bg-gray-50 w-full outline-none border border-gray-100 rounded-md text-sm focus:border-blue-500" placeholder="serch...">
+                                <i class="ri-serch-line absoluse top-1/2 left-4 -translate-y-1/2 text-gray-400"></i>
+                            </div>
+                            <select class="text-sm py-2 pl-4 pr-10 bg-gray-50 border text-gray-400 border-gray-100 rounded-md focus:border-blue-500 outline-none appearance-none bg-select-arrow bg-no bg-repeat bg-[length:16px_16px] bg-[right_16px_center]">
+                                <option value="">All down</option>
+                            </select>
+                        </form>
+                        <div class="overflow-x-auto">
+                            <table class="min-w-[540px]" data-tab-for="order" data-page="active">
+                                <thead>
+                                    <tr>
+                                        <th class="text-[12-px] uppercase tracking-wide font-medium text-gray-400 py-2 px-4 bg-gray-50 text-left rounded-tl-md rounded-bl-md">Service</th>
+                                        <th class="text-[12-px] uppercase tracking-wide font-medium text-gray-400 py-2 px-4 bg-gray-50 text-left">Price</th>
+                                        <th class="text-[12-px] uppercase tracking-wide font-medium text-gray-400 py-2 px-4 bg-gray-50 text-left">Click</th>
+                                        <th class="text-[12-px] uppercase tracking-wide font-medium text-gray-400 py-2 px-4 bg-gray-50 text-left rounded-tr-md rounded-br-md"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="py-2 px-4">
+                                            <div class="flex-items-center">
+                                                <i class="bi bi-person-square"></i>
+                                                <a href="#" class="text-gray-600 font font-medium hover:text-blue-500 ml-2">Create landing page</a>
+                                            </div>
+                                        </td>
+                                        <td class="py-2 px-4 border-b border-b-gray-50">
+                                            <span class="text-[13px] font-medium text-gray-400">$235</span>
+                                        </td>
+                                        <td class="py-2 px-4 border-b border-b-gray-50">
+                                            <span class="text-[13px] font-medium text-gray-400">1K</span>
+                                        </td>
+                                        <td class="py-2 px-4 border-b border-b-gray-50">
+                                            <div class="dropdown">
+                                                <button type="button" class="dropdown-toggle text-gray-400 hover:text-gray-600 text-sm w-6 h-6 rounded flex items-center justify-center bg-gray-50"><a class="w-6 h-7"><b>...</b></a></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="py-2 px-4">
+                                            <div class="flex-items-center">
+                                                <i class="bi bi-person-square"></i>
+                                                <a href="#" class="text-gray-600 font font-medium hover:text-blue-500 ml-2">Create landing page</a>
+                                            </div>
+                                        </td>
+                                        <td class="py-2 px-4 border-b border-b-gray-50">
+                                            <span class="text-[13px] font-medium text-gray-400">$235</span>
+                                        </td>
+                                        <td class="py-2 px-4 border-b border-b-gray-50">
+                                            <span class="text-[13px] font-medium text-gray-400">1K</span>
+                                        </td>
+                                        <td class="py-2 px-4 border-b border-b-gray-50">
+                                            <div class="dropdown">
+                                                <button type="button" class="dropdown-toggle text-gray-400 hover:text-gray-600 text-sm w-6 h-6 rounded flex items-center justify-center bg-gray-50"><a class="w-6 h-7"><b>...</b></a></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="py-2 px-4">
+                                            <div class="flex-items-center">
+                                                <i class="bi bi-person-square"></i>
+                                                <a href="#" class="text-gray-600 font font-medium hover:text-blue-500 ml-2">Create landing page</a>
+                                            </div>
+                                        </td>
+                                        <td class="py-2 px-4 border-b border-b-gray-50">
+                                            <span class="text-[13px] font-medium text-gray-400">$235</span>
+                                        </td>
+                                        <td class="py-2 px-4 border-b border-b-gray-50">
+                                            <span class="text-[13px] font-medium text-gray-400">1K</span>
+                                        </td>
+                                        <td class="py-2 px-4 border-b border-b-gray-50">
+                                            <div class="dropdown">
+                                                <button type="button" class="dropdown-toggle text-gray-400 hover:text-gray-600 text-sm w-6 h-6 rounded flex items-center justify-center bg-gray-50"><a class="w-6 h-7"><b>...</b></a></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="py-2 px-4">
+                                            <div class="flex-items-center">
+                                                <i class="bi bi-person-square"></i>
+                                                <a href="#" class="text-gray-600 font font-medium hover:text-blue-500 ml-2">Create landing page</a>
+                                            </div>
+                                        </td>
+                                        <td class="py-2 px-4 border-b border-b-gray-50">
+                                            <span class="text-[13px] font-medium text-gray-400">$235</span>
+                                        </td>
+                                        <td class="py-2 px-4 border-b border-b-gray-50">
+                                            <span class="text-[13px] font-medium text-gray-400">1K</span>
+                                        </td>
+                                        <td class="py-2 px-4 border-b border-b-gray-50">
+                                            <div class="dropdown">
+                                                <button type="button" class="dropdown-toggle text-gray-400 hover:text-gray-600 text-sm w-6 h-6 rounded flex items-center justify-center bg-gray-50"><a class="w-6 h-7"><b>...</b></a></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="py-2 px-4">
+                                            <div class="flex-items-center">
+                                                <i class="bi bi-person-square"></i>
+                                                <a href="#" class="text-gray-600 font font-medium hover:text-blue-500 ml-2">Create landing page</a>
+                                            </div>
+                                        </td>
+                                        <td class="py-2 px-4 border-b border-b-gray-50">
+                                            <span class="text-[13px] font-medium text-gray-400">$235</span>
+                                        </td>
+                                        <td class="py-2 px-4 border-b border-b-gray-50">
+                                            <span class="text-[13px] font-medium text-gray-400">1K</span>
+                                        </td>
+                                        <td class="py-2 px-4 border-b border-b-gray-50">
+                                            <div class="dropdown">
+                                                <button type="button" class="dropdown-toggle text-gray-400 hover:text-gray-600 text-sm w-6 h-6 rounded flex items-center justify-center bg-gray-50"><a class="w-6 h-7"><b>...</b></a></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- CONTENT BY FAHAD END -->
         </div>
     </div>
     <!-- end content -->
@@ -149,37 +388,38 @@
             </div>
             <hr class="my-1 text-gray-600 opacity-5">
             <div class="mb-1 group active">
-                 <a href="#" class="flex items-center py-2 px-4 text-gray-300 hover:bg-gray-950 hover:text-gray-100 rounded-md group-[.active]:bg-gray-800 group-[.active]:text-white group-[.selected]:bg-gray-950 group-[.selected]:text-gray-100">
+                <a href="#" class="flex items-center py-2 px-4 text-gray-300 hover:bg-gray-950 hover:text-gray-100 rounded-md group-[.active]:bg-gray-800 group-[.active]:text-white group-[.selected]:bg-gray-950 group-[.selected]:text-gray-100">
                     <i class="bi bi-house-door mr-3 text-xl"></i>
                     <span class="text-sm">Dashboard</span>
                 </a>
             </div>
             <div>
-                 <a href="#" class="flex items-center py-2 px-4 text-gray-300 hover:bg-gray-950 hover:text-gray-100 rounded-md group-[.active]:bg-gray-800 group-[.active]:text-white group-[.selected]:bg-gray-950 group-[.selected]:text-gray-100">
+                <a href="#" class="flex items-center py-2 px-4 text-gray-300 hover:bg-gray-950 hover:text-gray-100 rounded-md group-[.active]:bg-gray-800 group-[.active]:text-white group-[.selected]:bg-gray-950 group-[.selected]:text-gray-100">
                     <i class="bi bi-bar-chart-line mr-3 text-xl"></i>
                     <span class="text-sm">Orders</span>
                 </a>
             </div>
             <div class>
-                 <a href="#" class="flex items-center py-2 px-4 text-gray-300 hover:bg-gray-950 hover:text-gray-100 rounded-md group-[.active]:bg-gray-800 group-[.active]:text-white group-[.selected]:bg-gray-950 group-[.selected]:text-gray-100">
+                <a href="#" class="flex items-center py-2 px-4 text-gray-300 hover:bg-gray-950 hover:text-gray-100 rounded-md group-[.active]:bg-gray-800 group-[.active]:text-white group-[.selected]:bg-gray-950 group-[.selected]:text-gray-100">
                     <i class="bi bi-journals mr-3 text-xl"></i>
                     <span class="text-sm">Reports</span>
                 </a>
             </div>
             <div>
-                 <a href="#" class="flex items-center py-2 px-4 text-gray-300 hover:bg-gray-950 hover:text-gray-100 rounded-md group-[.active]:bg-gray-800 group-[.active]:text-white group-[.selected]:bg-gray-950 group-[.selected]:text-gray-100">
+                <a href="#" class="flex items-center py-2 px-4 text-gray-300 hover:bg-gray-950 hover:text-gray-100 rounded-md group-[.active]:bg-gray-800 group-[.active]:text-white group-[.selected]:bg-gray-950 group-[.selected]:text-gray-100">
                     <i class="bi bi-gear mr-3 text-xl"></i>
                     <span class="text-sm">Settings</span>
                 </a>
             </div>
             <div>
-                 <a href="#" class="flex items-center py-2 px-4 text-gray-300 hover:bg-gray-950 hover:text-gray-100 rounded-md group-[.active]:bg-gray-800 group-[.active]:text-white group-[.selected]:bg-gray-950 group-[.selected]:text-gray-100">
+                <a href="#" class="flex items-center py-2 px-4 text-gray-300 hover:bg-gray-950 hover:text-gray-100 rounded-md group-[.active]:bg-gray-800 group-[.active]:text-white group-[.selected]:bg-gray-950 group-[.selected]:text-gray-100">
                     <i class="bi bi-question-circle mr-3 text-xl"></i>
                     <span class="text-sm">Help</span>
                 </a>
             </div>
-        <div>
-    </div>
-    <!-- end sidebar -->
+            <div>
+            </div>
+            <!-- end sidebar -->
 </body>
+
 </html>
