@@ -243,6 +243,130 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="bg-white border-gray-100 shadow-md shadow-black/10 p-6">
+                    <div class="flax justify-between mb-4">
+                        <div class="font-medium py-5 px-2 mr-2">Manage Services</div>
+                        <form action="" class="flex items-center mb-4">
+                            <div class="relative w-full">
+                                <input type="text" class="py-2 pr-4 pl-10 bg-gray-50 w-full outline-none border border-gray-100 rounded-md text-sm focus:border-blue-500" placeholder="serch...">
+                                <i class="ri-serch-line absoluse top-1/2 left-4 -translate-y-1/2 text-gray-400"></i>
+                            </div>
+                            <select class="text-sm py-2 pl-4 pr-10 bg-gray-50 border text-gray-400 border-gray-100 rounded-md focus:border-blue-500 outline-none appearance-none bg-select-arrow bg-no bg-repeat bg-[length:16px_16px] bg-[right_16px_center]">
+                                <option value="">All down</option>
+                            </select>
+                        </form>
+                        <div class="overflow-x-auto">
+                            <table class="min-w-[540px]" data-tab-for="order" data-page="active">
+                                <thead>
+                                    <tr>
+                                        <th class="text-[12-px] uppercase tracking-wide font-medium text-gray-400 py-2 px-4 bg-gray-50 text-left rounded-tl-md rounded-bl-md">Service</th>
+                                        <th class="text-[12-px] uppercase tracking-wide font-medium text-gray-400 py-2 px-4 bg-gray-50 text-left">Price</th>
+                                        <th class="text-[12-px] uppercase tracking-wide font-medium text-gray-400 py-2 px-4 bg-gray-50 text-left">Click</th>
+                                        <th class="text-[12-px] uppercase tracking-wide font-medium text-gray-400 py-2 px-4 bg-gray-50 text-left rounded-tr-md rounded-br-md"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="py-2 px-4">
+                                            <div class="flex-items-center">
+                                                <i class="bi bi-person-square"></i>
+                                                <a href="#" class="text-gray-600 font font-medium hover:text-blue-500 ml-2">Create landing page</a>
+                                            </div>
+                                        </td>
+                                        <td class="py-2 px-4 border-b border-b-gray-50">
+                                            <span class="text-[13px] font-medium text-gray-400">$235</span>
+                                        </td>
+                                        <td class="py-2 px-4 border-b border-b-gray-50">
+                                            <span class="text-[13px] font-medium text-gray-400">1K</span>
+                                        </td>
+                                        <td class="py-2 px-4 border-b border-b-gray-50">
+                                            <div class="dropdown">
+                                                <button type="button" class="dropdown-toggle text-gray-400 hover:text-gray-600 text-sm w-6 h-6 rounded flex items-center justify-center bg-gray-50"><a class="w-6 h-7"><b>...</b></a></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="py-2 px-4">
+                                            <div class="flex-items-center">
+                                                <i class="bi bi-person-square"></i>
+                                                <a href="#" class="text-gray-600 font font-medium hover:text-blue-500 ml-2">Create landing page</a>
+                                            </div>
+                                        </td>
+                                        <td class="py-2 px-4 border-b border-b-gray-50">
+                                            <span class="text-[13px] font-medium text-gray-400">$235</span>
+                                        </td>
+                                        <td class="py-2 px-4 border-b border-b-gray-50">
+                                            <span class="text-[13px] font-medium text-gray-400">1K</span>
+                                        </td>
+                                        <td class="py-2 px-4 border-b border-b-gray-50">
+                                            <div class="dropdown">
+                                                <button type="button" class="dropdown-toggle text-gray-400 hover:text-gray-600 text-sm w-6 h-6 rounded flex items-center justify-center bg-gray-50"><a class="w-6 h-7"><b>...</b></a></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="py-2 px-4">
+                                            <div class="flex-items-center">
+                                                <i class="bi bi-person-square"></i>
+                                                <a href="#" class="text-gray-600 font font-medium hover:text-blue-500 ml-2">Create landing page</a>
+                                            </div>
+                                        </td>
+                                        <td class="py-2 px-4 border-b border-b-gray-50">
+                                            <span class="text-[13px] font-medium text-gray-400">$235</span>
+                                        </td>
+                                        <td class="py-2 px-4 border-b border-b-gray-50">
+                                            <span class="text-[13px] font-medium text-gray-400">1K</span>
+                                        </td>
+                                        <td class="py-2 px-4 border-b border-b-gray-50">
+                                            <div class="dropdown">
+                                                <button type="button" class="dropdown-toggle text-gray-400 hover:text-gray-600 text-sm w-6 h-6 rounded flex items-center justify-center bg-gray-50"><a class="w-6 h-7"><b>...</b></a></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="py-2 px-4">
+                                            <div class="flex-items-center">
+                                                <i class="bi bi-person-square"></i>
+                                                <a href="#" class="text-gray-600 font font-medium hover:text-blue-500 ml-2">Create landing page</a>
+                                            </div>
+                                        </td>
+                                        <td class="py-2 px-4 border-b border-b-gray-50">
+                                            <span class="text-[13px] font-medium text-gray-400">$235</span>
+                                        </td>
+                                        <td class="py-2 px-4 border-b border-b-gray-50">
+                                            <span class="text-[13px] font-medium text-gray-400">1K</span>
+                                        </td>
+                                        <td class="py-2 px-4 border-b border-b-gray-50">
+                                            <div class="dropdown">
+                                                <button type="button" class="dropdown-toggle text-gray-400 hover:text-gray-600 text-sm w-6 h-6 rounded flex items-center justify-center bg-gray-50"><a class="w-6 h-7"><b>...</b></a></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="py-2 px-4">
+                                            <div class="flex-items-center">
+                                                <i class="bi bi-person-square"></i>
+                                                <a href="#" class="text-gray-600 font font-medium hover:text-blue-500 ml-2">Create landing page</a>
+                                            </div>
+                                        </td>
+                                        <td class="py-2 px-4 border-b border-b-gray-50">
+                                            <span class="text-[13px] font-medium text-gray-400">$235</span>
+                                        </td>
+                                        <td class="py-2 px-4 border-b border-b-gray-50">
+                                            <span class="text-[13px] font-medium text-gray-400">1K</span>
+                                        </td>
+                                        <td class="py-2 px-4 border-b border-b-gray-50">
+                                            <div class="dropdown">
+                                                <button type="button" class="dropdown-toggle text-gray-400 hover:text-gray-600 text-sm w-6 h-6 rounded flex items-center justify-center bg-gray-50"><a class="w-6 h-7"><b>...</b></a></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
             </div>
             <!-- CONTENT BY FAHAD END -->
         </div>
