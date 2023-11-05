@@ -373,14 +373,30 @@
     </div>
     <!-- end content -->
 
-    <!-- footer -->
-    <!-- <div class="bg-gray-900 w-auto ml-64 h-10">
-        <h1 class="text-white text-center pt-2">@COPYRIGHT</h1>
-    </div> -->
+    <!-- footer by alwan -->
+    <footer class="ml-64 shadow dark:bg-gray-900">
+        <div class="w-full mx-auto max-w-screen-xl p-5 md:flex md:items-center md:justify-between">
+            <!-- <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">Kelompok E <a href="https://flowbite.com/" class="hover:underline"></a></span> -->
+            <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
+                <li>
+                    <a href="#" class="mr-4 hover:underline md:mr-6 ">About</a>
+                </li>
+                <li>
+                    <a href="#" class="mr-4 hover:underline md:mr-6">Privacy Policy</a>
+                </li>
+                <li>
+                    <a href="#" class="mr-4 hover:underline md:mr-6">Licensing</a>
+                </li>
+                <li>
+                    <a href="#" class="hover:underline">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
     <!-- endfooter -->
 
     <!-- sidebar -->
-    <div class="sidebar bg-gray-900 fixed w-64 h-full left-0 top-0 p-4 z-50 text-white">
+    <div class="sidebar bg-gray-900 fixed h-full w-64 left-0 top-0 p-4 z-50 text-white">
         <div class="text-white text-xl">
             <div class="p-2.5 flex items-center">
                 <i class="bi bi-person-square px-2 pr-0 py-1 text-2xl"></i>
@@ -417,8 +433,8 @@
                     <span class="text-sm">Help</span>
                 </a>
             </div>
-            <div>
-            </div>
+        <div>
+    </div>
             <!-- end sidebar -->
 </body>
 
