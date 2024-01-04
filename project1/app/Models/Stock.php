@@ -14,6 +14,7 @@ class Stock extends Model
         'kode_barang',
         'stok',
         'cabang_id',
+        'nama_barang',
     ];
 
     public function barang(): BelongsTo{
