@@ -22,7 +22,7 @@
                     <div class="form-group">
                         <label for="">Barang</label>
                         <br>
-                        <select name="kode_barang" id="">
+                        <select class="form-select" name="kode_barang" id="">
                             <option value="">Open this select menu</option>
                                 @foreach ($barangs as $key => $value)
                                     @if (old('kode_barang') == $key)
@@ -40,7 +40,7 @@
                     <div class="form-group">
                         <label for="">Cabang</label>
                         <br>
-                        <select name="cabang_id" id="">
+                        <select class="form-select" name="cabang_id" id="">
                             <option value="">Open this select menu</option>
                                 @foreach ($cabangs as $key => $value)
                                     @if (old('cabang_id') == $key)

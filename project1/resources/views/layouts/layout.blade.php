@@ -76,6 +76,7 @@
             <span class="nav-link-text ms-1">Cabang</span>
           </a>
         </li>
+        
         <li class="nav-item">
           <a class="nav-link" href="/barangs">
             <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
@@ -140,8 +141,12 @@
           <ul class="navbar-nav  justify-content-end">
             <li class="nav-item d-flex align-items-center">
                 <a href="#" class="nav-link text-body font-weight-bold px-0">
-                <i class="fa fa-user me-sm-1"></i>
-                <span class="d-sm-inline d-none">Sign Out</span>
+                
+                
+                <form method="POST" action="{{route('logout')}}">
+                  @csrf
+                  <button type="submit" class="btn btn-primary">Logout</button>
+                </form>
               </a>
             </li>
             <li class="nav-item d-xl-none ps-3 d-flex align-items-center">
