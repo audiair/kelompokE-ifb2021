@@ -11,7 +11,8 @@ use App\Models\Cabang;
 class StockController extends Controller
 {
     public function index(){
-        $data['stocks'] = Stock::with('barang','cabang')->get();
+        $data['stocks'] = Stock::with('barang')->get();
+        $data['stocks'] = Stock::with('cabang')->get();
         return view('stocks.index', $data);
     }
 

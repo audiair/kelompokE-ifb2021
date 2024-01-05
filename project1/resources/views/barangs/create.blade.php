@@ -28,10 +28,6 @@
                         <input name="nama_barang" type="text" class="form-control" placeholder="Enter nama barang">
                     </div>
                     <div class="form-group">
-                        <label for="">Jenis Barang</label>
-                        <input name="jenis" type="text" class="form-control" placeholder="Enter jenis barang">
-                    </div>
-                    <div class="form-group">
                         <label for="">Satuan</label>
                         <input name="satuan" type="text" class="form-control" placeholder="Enter satuan barang">
                     </div>

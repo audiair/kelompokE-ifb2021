@@ -6,26 +6,28 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
-class Stock extends Model
+class BarangMasuk extends Model
 {
     use HasFactory;
 
     protected $fillable = [
+        'tgl_masuk' ,
+        'cabang_id' ,
+        'id_staff_gudang',
         'kode_barang',
-        'stok',
-        'cabang_id',
-        'nama_barang',
+        'jumlah',
+        'harga_beli',
     ];
-
+  
     public function barang(): BelongsTo{
         return $this->belongsTo(Barang::class, 'kode_barang');
     }
 
-    public function cabang(): BelongsTo{
-        return $this->belongsTo(Cabang::class);
+    public function staff_gudang(): BelongsTo{
+        return $this->belongsTo(StaffGudang::class, 'id_staff_gudang');
     }
 
-    public function barang_masuk(): BelongsTo{
-        return $this->belongsTo(BarangMasuk::class, 'kode_barang','id');
+    public function cabang(): BelongsTo{
+        return $this->belongsTo(Cabang::class, 'cabang_id');
     }
 }

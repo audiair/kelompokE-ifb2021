@@ -16,8 +16,7 @@
                                 <th class="text-uppercase text-secondary text-xs font-weight-bolder opacity-7">No</th>
                                 <th class="text-uppercase text-secondary text-xs font-weight-bolder opacity-7">Kode Barang</th>
                                 <th class="text-uppercase text-secondary text-xs font-weight-bolder opacity-7">Nama Barang</th>
-                                <th class="text-uppercase text-secondary text-xs font-weight-bolder opacity-7 px-3">Jenis Barang</th>
-                                <th class="text-uppercase text-secondary text-xs font-weight-bolder opacity-7 px-3">Satuan</th>
+                                <th class="text-uppercase text-secondary text-xs font-weight-bolder opacity-7">Satuan</th>
                                 <th class="text-uppercase text-secondary text-xs font-weight-bolder opacity-7">Harga Satuan</th>
                                 <th class="text-uppercase text-secondary text-xs font-weight-bolder opacity-7">Aksi</th>
                             </tr>
@@ -29,7 +28,6 @@
                                 <td class="text-uppercase text-secondary text-xs font-weight-bolder px-4">{{ $no++ }}</td>
                                 <td class="text-uppercase text-secondary text-xs font-weight-bolder px-5">{{ $barang->kode}}</td>
                                 <td class="text-uppercase text-secondary text-xs font-weight-bolder px-4">{{ $barang->nama_barang }}</td>
-                                <td class="text-uppercase text-secondary text-xs font-weight-bolder px-3">{{ $barang->jenis }}</td>
                                 <td class="text-uppercase text-secondary text-xs font-weight-bolder px-3">{{ $barang->satuan }}</td>
                                 <td class="text-uppercase text-secondary text-xs font-weight-bolder px-5">{{ $barang->harga_satuan }}</td>
                                 <td class="flex flex-row gap-4">

@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CabangController;
 use App\Http\Controllers\BarangController;
 use App\Http\Controllers\StockController;
+use App\Http\Controllers\BarangMasukController;
 
 /*
 |--------------------------------------------------------------------------
@@ -47,5 +48,12 @@ Route::get('/stocks', [StockController::class, 'index'])->name('stocks');
 Route::get('/stocks/create', [StockController::class, 'create'])->name('stock.create');
 Route::post('/stocks', [StockController::class, 'store'])->name('stock.store');
 Route::delete('/stocks/{id}', [StockController::class, 'destroy'])->name('stock.destroy');
+
+Route::get('/barang_masuks', [BarangMasukController::class, 'index'])->name('barang_masuks');
+Route::get('/barang_masuks/create', [BarangMasukController::class, 'create'])->name('barang_masuk.create');
+Route::post('/barang_masuks', [BarangMasukController::class, 'store'])->name('barang_masuk.store');
+Route::get('/barang_masuks/{id}/edit', [BarangMasukController::class, 'edit'])->name('barang_masuk.edit');
+Route::match(['put', 'patch'], '/barang_masuks/{id}', [BarangMasukController::class, 'update'])->name('barang_masuk.update');
+Route::delete('/barang_masuks/{id}', [BarangMasukController::class, 'destroy'])->name('barang_masuk.destroy');
 
 require __DIR__.'/auth.php';

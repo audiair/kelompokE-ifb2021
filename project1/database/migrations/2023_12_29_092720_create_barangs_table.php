@@ -15,7 +15,6 @@ return new class extends Migration
             $table->id();
             $table->char('kode', 10)->unique();
             $table->string('nama_barang', 50);
-            $table->string('jenis', 20);
             $table->string('satuan', 10);
             $table->char('harga_satuan',10);
             $table->timestamps();

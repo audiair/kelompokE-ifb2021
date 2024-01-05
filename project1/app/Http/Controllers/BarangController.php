@@ -21,7 +21,6 @@ class BarangController extends Controller
         $validated = $request->validate([
             'kode' => 'required|unique:barangs|max:10',
             'nama_barang' => 'required|max:255',
-            'jenis' => 'required|max:150',
             'satuan' => 'required|max:100',
             'harga_satuan' => 'required|numeric',
         ]);
@@ -45,7 +44,6 @@ class BarangController extends Controller
 
         $validated = $request->validate([
             'nama_barang' => 'required|max:255',
-            'jenis' => 'required|max:150',
             'satuan' => 'required|max:100',
             'harga_satuan' => 'required|numeric',
         ]);

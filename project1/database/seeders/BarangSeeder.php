@@ -18,7 +18,6 @@ class BarangSeeder extends Seeder
             [
                 'kode'=>'001',
                 'nama_barang'=>'Beras Putih',
-                'jenis'=>'Beras',
                 'satuan'=>'Kilogram',
                 'harga_satuan'=>'15000',
                 'created_at' => now(),
@@ -28,7 +27,6 @@ class BarangSeeder extends Seeder
             [
                 'kode'=>'002',
                 'nama_barang'=>'Susu UHT',
-                'jenis'=>'Susu',
                 'satuan'=>'Liter',
                 'harga_satuan'=>'15000',
                 'created_at' => now(),
@@ -38,7 +36,6 @@ class BarangSeeder extends Seeder
             [
                 'kode'=>'003',
                 'nama_barang'=>'Mie Goreng',
-                'jenis'=>'Mie',
                 'satuan'=>'Pcs',
                 'harga_satuan'=>'4000',
                 'created_at' => now(),
@@ -48,7 +45,6 @@ class BarangSeeder extends Seeder
             [
                 'kode'=>'004',
                 'nama_barang'=>'Mie Kuah',
-                'jenis'=>'Mie',
                 'satuan'=>'Pcs',
                 'harga_satuan'=>'4000',
                 'created_at' => now(),
@@ -58,7 +54,6 @@ class BarangSeeder extends Seeder
             [
                 'kode'=>'005',
                 'nama_barang'=>'Terigu Protein Tinggi',
-                'jenis'=>'Terigu',
                 'satuan'=>'Kilogram',
                 'harga_satuan'=>'15000',
                 'created_at' => now(),
@@ -68,7 +63,6 @@ class BarangSeeder extends Seeder
             [
                 'kode'=>'006',
                 'nama_barang'=>'Terigu Protein Sedang',
-                'jenis'=>'Terigu',
                 'satuan'=>'Kilogram',
                 'harga_satuan'=>'15000',
                 'created_at' => now(),
@@ -78,7 +72,6 @@ class BarangSeeder extends Seeder
             [
                 'kode'=>'007',
                 'nama_barang'=>'Tisu Basah',
-                'jenis'=>'Tisu',
                 'satuan'=>'Pack',
                 'harga_satuan'=>'10000',
                 'created_at' => now(),
@@ -88,7 +81,6 @@ class BarangSeeder extends Seeder
             [
                 'kode'=>'008',
                 'nama_barang'=>'Tisu Wajah',
-                'jenis'=>'Tisu',
                 'satuan'=>'Pack',
                 'harga_satuan'=>'15000',
                 'created_at' => now(),
@@ -98,7 +90,6 @@ class BarangSeeder extends Seeder
             [
                 'kode'=>'009',
                 'nama_barang'=>'Kecap Manis',
-                'jenis'=>'Kecap',
                 'satuan'=>'Ml',
                 'harga_satuan'=>'10000',
                 'created_at' => now(),
@@ -108,7 +99,6 @@ class BarangSeeder extends Seeder
             [
                 'kode'=>'010',
                 'nama_barang'=>'Kecap Asin',
-                'jenis'=>'Kecap',
                 'satuan'=>'Ml',
                 'harga_satuan'=>'10000',
                 'created_at' => now(),

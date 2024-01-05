@@ -14,7 +14,7 @@
                         <thead>
                             <tr>
                                 <th class="text-uppercase text-secondary text-xs font-weight-bolder opacity-7">No</th>
-                                <th class="text-uppercase text-secondary text-xs font-weight-bolder opacity-7">Barang</th>
+                                <th class="text-uppercase text-secondary text-xs font-weight-bolder opacity-7 px-5">Barang</th>
                                 <th class="text-uppercase text-secondary text-xs font-weight-bolder opacity-7">Stok</th>
                                 <th class="text-uppercase text-secondary text-xs font-weight-bolder opacity-7">Cabang</th>
                                 <th class="text-uppercase text-secondary text-xs font-weight-bolder opacity-7">Aksi</th>
@@ -25,7 +25,7 @@
                         @foreach($stocks as $stock)
                             <tr>
                                 <td class="text-uppercase text-secondary text-xs font-weight-bolder px-4">{{ $no++ }}</td>
-                                <td class="text-uppercase text-secondary text-xs font-weight-bolder px-4">{{ $stock->kode_barang}}</td>
+                                <td class="text-uppercase text-secondary text-xs font-weight-bolder px-4">{{ $stock->barang->kode}} - {{ $stock->barang->nama_barang }}</td>
                                 <td class="text-uppercase text-secondary text-xs font-weight-bolder px-4">{{ $stock->stok }}</td>
                                 <td class="text-uppercase text-secondary text-xs font-weight-bolder px-4">{{ $stock->cabang->nama_cabang }}</td>
                                 <td class="flex flex-row gap-4">

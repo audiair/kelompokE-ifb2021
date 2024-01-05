@@ -11,27 +11,31 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('transaksi', function (Blueprint $table) {
+        Schema::create('barang_masuks', function (Blueprint $table) {
             $table->id();
-            $table->date('tgl_transaksi');
+            $table->date('tgl_masuk');
             $table->char('kode_barang',10);
             $table->char('jumlah',10);
-            $table->char('harga_satuan',10);
-            $table->char('sub_total',10);
+            $table->char('harga_beli',10);
             $table->timestamps();
 
-            $table->foreignId('id_pegawai')
-                  ->references('id')
-                  ->on('pegawais')
-                  ->onUpdate('cascade')
-                  ->onDelete('cascade');
-            
             $table->foreign('kode_barang')
                   ->references('kode')
                   ->on('barangs')
                   ->onUpdate('cascade')
                   ->onDelete('cascade');
 
+            $table->foreignId('id_staff_gudang')
+                  ->references('id')
+                  ->on('staff_gudangs')
+                  ->onUpdate('cascade')
+                  ->onDelete('cascade');
+
+            $table->foreignId('cabang_id')
+                  ->references('id')
+                  ->on('cabangs')
+                  ->onUpdate('cascade')
+                  ->onDelete('cascade');
         });
     }
 
@@ -40,6 +44,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('transaksi');
+        Schema::dropIfExists('barang_masuks');
     }
 };
