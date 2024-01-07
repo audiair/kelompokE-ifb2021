@@ -24,7 +24,7 @@ class StaffGudangSeeder extends Seeder
             'cabang_id' => '1',
             'role' => 'staff gudang',
         ]);
-
+        
         $user->assignRole('staff_gudang');
     }
 }

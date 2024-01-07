@@ -55,18 +55,22 @@
                     <div class="form-group">
                         <label for="">Role</label>
                         <br>
-                        @hasrole('owner')
                         <select name="role" class="form-select">
                             <option value="">Open this select menu</option>
+                            @hasrole('owner')
                             <option value="owner">Owner</option>
                             <option value="manajer">Manajer</option>
-                            @hasanyrole('owner|manajer')
                             <option value="supervisor">Supervisor</option>
                             <option value="kasir">Kasir</option>
                             <option value="staff gudang">Staff Gudang</option>
-                            @endhasanyrole
+                            @endhasrole
+                            
+                            @hasrole('manajer')
+                            <option value="supervisor">Supervisor</option>
+                            <option value="kasir">Kasir</option>
+                            <option value="staff gudang">Staff Gudang</option>
+                            @endhasrole
                         </select>
-                        @endhasrole
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>

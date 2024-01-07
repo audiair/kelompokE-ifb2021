@@ -25,11 +25,7 @@ class CabangController extends Controller
 
         Cabang::create($validated);
         
-        if($request->save == true) {
-            return redirect()->route('/cabangs')->with('success', 'DATA BERHASIL DITAMBAH');
-        } else {
-            return redirect()->route('cabang.create');
-        }
+        return redirect()->route('cabangs')->with('success', 'DATA BERHASIL DITAMBAH');
     }
 
     public function edit($id){

@@ -20,6 +20,7 @@ class DatabaseSeeder extends Seeder
             SupervisorSeeder::class,
             KasirSeeder::class,
             StaffGudangSeeder::class,
+            BarangSeeder::class,
         ]);
     }
 }

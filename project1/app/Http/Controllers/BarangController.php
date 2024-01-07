@@ -30,12 +30,8 @@ class BarangController extends Controller
         ]);
 
         Barang::create($validated);
-        
-        if($request->save == true) {
-            return redirect()->route('barangs')->with('success', 'DATA BERHASIL DITAMBAH');
-        } else {
-            return redirect()->route('barang.create');
-        }
+    
+        return redirect()->route('barangs')->with('success', 'DATA BERHASIL DITAMBAH');
     }
 
     public function edit($kode){
