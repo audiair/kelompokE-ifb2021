@@ -7,7 +7,7 @@ use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Hash;
 use App\Models\User;
 
-class ManajerSeeder extends Seeder
+class KasirSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -15,16 +15,16 @@ class ManajerSeeder extends Seeder
     public function run(): void
     {
         $user = User::create([
-            'name' => 'Harris',
-            'email' => 'harris@gmail.com',
+            'name' => 'Bela',
+            'email' => 'Bela@gmail.com',
             'email_verified_at' => now(),
             'password' => Hash::make('password'),
             'created_at' => now(),
             'updated_at' => now(),
             'cabang_id' => '1',
-            'role' => 'manajer',
+            'role' => 'kasir',
         ]);
 
-        $user->assignRole('manajer');
+        $user->assignRole('kasir');
     }
 }

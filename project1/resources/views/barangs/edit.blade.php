@@ -21,12 +21,20 @@
                 @csrf 
                 @method('PATCH')
                     <div class="form-group">
+                        <label for="">User</label>
+                        <input name="user_id"type="hidden" class="form-control" value="{{Auth::user()->id}}">
+                    </div>
+                    <div class="form-group">
                         <label for="">Kode Barang</label>
                         <input name="kode" type="text" class="form-control" placeholder="Enter kode barang"  value="{{ old('kode', $barang->kode) }}">
                     </div>
                     <div class="form-group">
                         <label for="">Nama Barang</label>
                         <input name="nama_barang" type="text" class="form-control" placeholder="Enter nama barang" value="{{ old('nama_barang', $barang->nama_barang) }}">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Stok</label>
+                        <input name="stok" type="text" class="form-control" placeholder="Enter nama barang" value="{{ old('stok', $barang->stok) }}">
                     </div>
                     <div class="form-group">
                         <label for="">Satuan</label>

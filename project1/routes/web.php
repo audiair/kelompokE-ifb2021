@@ -4,8 +4,9 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CabangController;
 use App\Http\Controllers\BarangController;
-use App\Http\Controllers\StockController;
-use App\Http\Controllers\BarangMasukController;
+use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\TransaksiController;
 
 /*
 |--------------------------------------------------------------------------
@@ -32,28 +33,37 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });  
 
-Route::get('/dashboard', function () {
+Route::get('/home', function () {
     return view('layouts.layout');
-});
-Route::get('/cabangs', [CabangController::class, 'index'])->name('index');
+})->middleware(['auth', 'verified'])->name('home');
 
-Route::get('/barangs', [BarangController::class, 'index'])->name('barangs');
-Route::get('/barangs/create', [BarangController::class, 'create'])->name('barang.create');
-Route::post('/barangs', [BarangController::class, 'store'])->name('barang.store');
-Route::get('/barangs/{kode}/edit', [BarangController::class, 'edit'])->name('barang.edit');
-Route::match(['put', 'patch'], '/barangs/{kode}', [BarangController::class, 'update'])->name('barang.update');
-Route::delete('/barangs/{kode}', [BarangController::class, 'destroy'])->name('barang.destroy');
+Route::middleware('auth')->group(function () {
+    Route::get('/home', [DashboardController::class, 'index'])->name('index');
 
-Route::get('/stocks', [StockController::class, 'index'])->name('stocks');
-Route::get('/stocks/create', [StockController::class, 'create'])->name('stock.create');
-Route::post('/stocks', [StockController::class, 'store'])->name('stock.store');
-Route::delete('/stocks/{id}', [StockController::class, 'destroy'])->name('stock.destroy');
+    Route::get('/cabangs', [CabangController::class, 'index'])->name('cabangs');
+    Route::get('/cabangs/create', [CabangController::class, 'create'])->name('cabang.create');
+    Route::post('/cabangs', [CabangController::class, 'store'])->name('cabang.store');
+    Route::get('/cabangs/{id}/edit', [CabangController::class, 'edit'])->name('cabang.edit');
+    Route::match(['put', 'patch'], '/cabangs/{id}', [CabangController::class, 'update'])->name('cabang.update');
+    Route::delete('/cabangs/{id}', [CabangController::class, 'destroy'])->name('cabang.destroy');
 
-Route::get('/barang_masuks', [BarangMasukController::class, 'index'])->name('barang_masuks');
-Route::get('/barang_masuks/create', [BarangMasukController::class, 'create'])->name('barang_masuk.create');
-Route::post('/barang_masuks', [BarangMasukController::class, 'store'])->name('barang_masuk.store');
-Route::get('/barang_masuks/{id}/edit', [BarangMasukController::class, 'edit'])->name('barang_masuk.edit');
-Route::match(['put', 'patch'], '/barang_masuks/{id}', [BarangMasukController::class, 'update'])->name('barang_masuk.update');
-Route::delete('/barang_masuks/{id}', [BarangMasukController::class, 'destroy'])->name('barang_masuk.destroy');
+    Route::get('/barangs', [BarangController::class, 'index'])->name('barangs');
+    Route::get('/barangs/create', [BarangController::class, 'create'])->name('barang.create');
+    Route::post('/barangs', [BarangController::class, 'store'])->name('barang.store');
+    Route::get('/barangs/{kode}/edit', [BarangController::class, 'edit'])->name('barang.edit');
+    Route::match(['put', 'patch'], '/barangs/{kode}', [BarangController::class, 'update'])->name('barang.update');
+    Route::delete('/barangs/{kode}', [BarangController::class, 'destroy'])->name('barang.destroy');
+
+    Route::get('/users', [UserController::class, 'index'])->name('users');
+    Route::get('/users/create', [UserController::class, 'create'])->name('user.create');
+    Route::post('/users', [UserController::class, 'store'])->name('user.store');
+    Route::delete('/users/{id}', [UserController::class, 'destroy'])->name('user.destroy');
+
+    Route::get('/transaksis', [TransaksiController::class, 'index'])->name('transaksis');
+    Route::get('/transaksis/create', [TransaksiController::class, 'create'])->name('transaksi.create');
+    Route::post('/transaksis', [TransaksiController::class, 'store'])->name('transaksi.store');
+    Route::delete('/transaksis/{id}', [TransaksiController::class, 'destroy'])->name('transaksi.destroy');
+});  
+
 
 require __DIR__.'/auth.php';

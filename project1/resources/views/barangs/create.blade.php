@@ -20,12 +20,20 @@
                 <form action="{{route('barang.store')}}" method="POST">
                 @csrf 
                     <div class="form-group">
+                        <label for="">User</label>
+                        <input name="user_id"type="hidden" class="form-control" value="{{Auth::user()->id}}">
+                    </div>
+                    <div class="form-group">
                         <label for="">Kode Barang</label>
                         <input name="kode"type="text" class="form-control" placeholder="Enter kode barang">
                     </div>
                     <div class="form-group">
                         <label for="">Nama Barang</label>
                         <input name="nama_barang" type="text" class="form-control" placeholder="Enter nama barang">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Stok</label>
+                        <input name="stok" type="text" class="form-control" placeholder="Enter stok barang">
                     </div>
                     <div class="form-group">
                         <label for="">Satuan</label>

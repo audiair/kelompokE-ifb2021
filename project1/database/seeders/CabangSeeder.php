@@ -19,7 +19,6 @@ class CabangSeeder extends Seeder
                 'kota'=> 'Cianjur',
                 'created_at' => now(),
                 'updated_at' => now(),
-                'manajer_id' => '1',
 
             ],
 
@@ -28,7 +27,6 @@ class CabangSeeder extends Seeder
                 'kota'=> 'Bogor',
                 'created_at' => now(),
                 'updated_at' => now(),
-                'manajer_id' => '2',
 
             ],
 
@@ -37,7 +35,6 @@ class CabangSeeder extends Seeder
                 'kota'=> 'Bandung',
                 'created_at' => now(),
                 'updated_at' => now(),
-                'manajer_id' => '3',
 
             ],
 
@@ -46,7 +43,6 @@ class CabangSeeder extends Seeder
                 'kota'=> 'Bekasi',
                 'created_at' => now(),
                 'updated_at' => now(),
-                'manajer_id' => '4',
 
             ],
 
@@ -55,7 +51,6 @@ class CabangSeeder extends Seeder
                 'kota'=> 'Jakarta',
                 'created_at' => now(),
                 'updated_at' => now(),
-                'manajer_id' => '5',
             ],
         ]);
     }

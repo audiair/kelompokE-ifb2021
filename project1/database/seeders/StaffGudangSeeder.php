@@ -4,9 +4,8 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use Illuminate\Support\Facades\DB; 
-use Faker\Factory as Faker;
-
+use Illuminate\Support\Facades\Hash;
+use App\Models\User;
 
 class StaffGudangSeeder extends Seeder
 {
@@ -15,15 +14,17 @@ class StaffGudangSeeder extends Seeder
      */
     public function run(): void
     {
-        $faker = Faker::create('id_ID');
+        $user = User::create([
+            'name' => 'Wagan',
+            'email' => 'wagan@gmail.com',
+            'email_verified_at' => now(),
+            'password' => Hash::make('password'),
+            'created_at' => now(),
+            'updated_at' => now(),
+            'cabang_id' => '1',
+            'role' => 'staff gudang',
+        ]);
 
-        for ($i=0; $i < 5; $i++) { 
-            DB::table('staff_gudangs')->insert([
-                'nama' => $faker->name,
-                'email' => $faker->email,
-                'created_at' => now(),
-                'updated_at' => now(),
-            ]);
-        }
+        $user->assignRole('staff_gudang');
     }
 }

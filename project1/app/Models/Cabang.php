@@ -10,7 +10,10 @@ class Cabang extends Model
 {
     use HasFactory;
 
-    public function manajer(): BelongsTo{
-        return $this->belongsTo(Manajer::class);
-    }
+    protected $fillable = [
+        'id',
+        'nama_cabang',
+        'kota',
+
+    ];
 }

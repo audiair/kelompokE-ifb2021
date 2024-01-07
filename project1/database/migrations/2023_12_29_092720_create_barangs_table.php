@@ -15,9 +15,16 @@ return new class extends Migration
             $table->id();
             $table->char('kode', 10)->unique();
             $table->string('nama_barang', 50);
+            $table->char('stok',10);
             $table->string('satuan', 10);
-            $table->char('harga_satuan',10);
+            $table->integer('harga_satuan')->default(0);
             $table->timestamps();
+            
+            $table->foreignId('user_id')
+                  ->references('id')
+                  ->on('users')
+                  ->onUpdate('cascade')
+                  ->onDelete('cascade');
         });
     }
 
